@@ -48,6 +48,8 @@ import { Row, Col } from './components/grid';
 import { Select, Option, OptionGroup } from './components/select';
 import locale from './locale';
 
+import FezLayout from './components/fez-layout';
+
 const fezui = {
     Affix,
     Alert,
@@ -118,7 +120,8 @@ const fezui = {
     Tooltip,
     Transfer,
     Tree,
-    Upload
+    Upload,
+    FezLayout
 };
 
 const install = function(Vue, opts = {}) {
