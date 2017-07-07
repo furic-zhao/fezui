@@ -47,16 +47,14 @@
                     <div class="top_nav">
                         <!-- topbar -->
                         <div class="nav_menu">
-                            <nav>
-                                <div class="nav toggle">
-                                    <a v-on:click="menuToggle">
-                                        <Icon type="navicon-round"></Icon>
-                                    </a>
-                                </div>
-                                <div class="nav-bar">
-                                    <slot name="topbar"></slot>
-                                </div>
-                            </nav>
+                            <div class="nav toggle">
+                                <a v-on:click="menuToggle">
+                                    <Icon type="navicon-round"></Icon>
+                                </a>
+                            </div>
+                            <div class="nav-bar">
+                                <slot name="topbar"></slot>
+                            </div>
                         </div>
                         <!-- /topbar -->
                     </div>
