@@ -1,18 +1,25 @@
-# fezui
-fezui 是一套基于 [Vue](https://github.com/vuejs/vue) 的支持多终端的开源UI交互组件库，致力于积木式的快速构建项目，提升产品体验和开发效率、降低开发和维护成本。
+# FEZUI
 
-## fezui基本特性
-- 丰富的组件，涵盖常用场景
-- 提供友好的 API ，自由灵活地使用空间
-- 细致、漂亮的 UI、可自定义主题
+FEZUI 是由京东3C系统支撑部-前端设计部开发维护的一套基于 [Vue](https://github.com/vuejs/vue)  的支持多终端的用户界面交互组件库，致力于积木式的快速构建项目，自动适配PC端、手机端、Ipad端以及微信端，或内嵌各种第三方Android、IOS的APP中使用，提升产品体验和开发效率、降低开发和维护成本。
+
+## FEZUI基本特性
+- 丰富的组件、积木式快速构建用户界面
+- 提供友好的 API 自动适配PC端、手机端、Pad端及各种大小屏幕
+- 基于ES6 Module模块化组织前端代码
+- 提供友好的 API ，自由灵活的功能定制
+- 配套细致、专业的UI及交互、可自定义主题
 
 ## 安装
-### NPM 安装
-推荐使用 npm 来安装，享受生态圈和工具带来的便利，更好地和 [fez模块化工程开发框架](https://github.com/furic-zhao/fez) 或 browserify/webpack 配合使用。
+### 通过 Bower 进行安装
+可以通过 Bower 安装并管理 FEZUI 的 Less、CSS、JavaScript 和字体文件。
 
 ````bash
-$ npm install fezui --save
+$ bower install fezui --save
 ````
+
+### 通过 NPM 安装
+
+FEZUI可以使用 npm 来安装，可以和 [fez模块化工程开发框架](https://github.com/furic-zhao/fez) 或 browserify/webpack及其它工程框架 配合使用。
 
 ### CDN 引入
 
@@ -36,15 +43,15 @@ $ npm install fezui --save
 <head>
     <meta charset="utf-8">
     <title>fezui example</title>
-    <link rel="stylesheet" type="text/css" href="http://unpkg.com/fezui/dist/css/fezui.css">
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/fezui/dist/css/fezui.css">
 </head>
 <body>
 <div id="app">
     <i-button @click="show">Click me!</i-button>
     <Modal v-model="visible" title="Welcome">欢迎使用 fezui</Modal>
 </div>
-<script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
-<script type="text/javascript" src="http://unpkg.com/fezui/dist/js/fezui.min.js"></script>
+<script type="text/javascript" src="//vuejs.org/js/vue.min.js"></script>
+<script type="text/javascript" src="//unpkg.com/fezui/dist/js/fezui.min.js"></script>
 <script>
     new Vue({
         el: '#app',
@@ -60,64 +67,4 @@ $ npm install fezui --save
   </script>
 </body>
 </html>
-````
-
-## 快速上手
-### 使用之前
-高效的开发，离不开基础工程的搭建。在开始使用 fezui 之前，有必要先了解以下基础知识，我们也假设您已经写过 Vue，并掌握了下面的内容。
-- [Vue组件](https://cn.vuejs.org/v2/guide/components.html)
-- [单文件组件](https://cn.vuejs.org/v2/guide/single-file-components.html)
-
-以下概念贯穿 fezui 前后，建议开发者花点时间来了解。
-- `props` 传递数据
-- `slot` 内容分发
-- `events` `$emit` `@click` 事件
-
-### 引入 fezui
-一般在入口页面 `index.js` 中如下配置：
-
-````bash
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import App from 'components/app.vue';    // 路由挂载
-import Routers from './router.js';       // 路由列表
-import fezui from 'fezui';
-import 'fezui/dist/css/fezui.css';    // 使用 CSS
-
-Vue.use(VueRouter);
-Vue.use(fezui);
-
-// 路由配置
-const RouterConfig = {
-    routes: Routers
-};
-const router = new VueRouter(RouterConfig);
-
-new Vue({
-    el: '#app',
-    router: router,
-    render: h => h(App)
-});
-````
-
-### 按需引用
-如果您想在项目中按需使用组件，减少文件体积，可以这样写：
-
-````bash
-import Checkbox from 'fezui/src/components/checkbox';
-````
-
-### 特别提醒
-- 按需引用仍然需要导入样式，即在 `index.js` 或根组件执行 `import 'fezui/src/styles/index.less';`
-- 按需引用是直接引用的组件库源代码，必须要依赖工程编译。
-
-### 组件使用规范
-使用`:prop`传递数据格式为 数字、布尔值或函数时，必须带`:`(兼容String除外，具体看组件文档)，比如：
-
-````bash
-正确的使用方法：
-<Page :current="1" :total="100"></Page>
-
-错误的使用方法：
-<Page current="1" total="100"></Page>
 ````
