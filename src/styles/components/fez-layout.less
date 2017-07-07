@@ -50,7 +50,7 @@
             }
         }
         .nav.child_menu li.active, .nav.side-menu li.active-sm {
-            border-right: 3px solid #1ABB9C;
+            border-right: 3px solid @success-color;
         }
         .nav-sm ul.nav.child_menu ul, .nav.side-menu li.active-sm ul ul {
             position: static;
@@ -181,7 +181,7 @@
     }
     .nav_title {
         width: 230px;
-        background: #2A3F54;
+        // background: #2A3F54;
         border-radius: 0;
         height: 80px;
         // margin-bottom: 10px;
@@ -245,7 +245,7 @@
     .nav-md ul.nav.child_menu {
         li.current-page {
             &:before {
-                background-color: #ff604f;
+                background-color: @warning-color;
             }
         }
         li {
@@ -288,7 +288,7 @@
         padding: 10px 15px;
     }
     .nav.side-menu > li.current-page, .nav.side-menu > li.active {
-        border-right: 5px solid #1ABB9C;
+        border-right: 5px solid @success-color;
     }
     .nav li.current-page {
         background: rgba(255, 255, 255, 0.05);
