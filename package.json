@@ -1,6 +1,6 @@
 {
   "name": "fezui",
-  "version": "1.1.8",
+  "version": "1.1.10",
   "description": "fezui 是一套基于 Vue 的支持多终端的开源UI交互组件库，致力于积木式的快速构建项目，提升产品体验和开发效率、降低开发和维护成本。",
   "main": "dist/js/fezui.js",
   "repository": {

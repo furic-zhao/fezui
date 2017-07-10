@@ -11253,8 +11253,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
 
 exports.default = {
     data: function data() {
@@ -20708,7 +20706,7 @@ module.exports = { render: function render() {
       staticClass: "top_nav"
     }, [_c('div', {
       staticClass: "nav_menu"
-    }, [_c('nav', [_c('div', {
+    }, [_c('div', {
       staticClass: "nav toggle"
     }, [_c('a', {
       on: {
@@ -20720,7 +20718,7 @@ module.exports = { render: function render() {
       }
     })], 1)]), _vm._v(" "), _c('div', {
       staticClass: "nav-bar"
-    }, [_vm._t("topbar")], 2)])])]), _vm._v(" "), _c('div', {
+    }, [_vm._t("topbar")], 2)])]), _vm._v(" "), _c('div', {
       staticClass: "right_col fez-article",
       attrs: {
         "role": "main"
@@ -22081,7 +22079,7 @@ module.exports = { render: function render() {
     return _c('li', {
       class: _vm.classes
     }, [_vm._v(_vm._s(_vm.data.label)), _vm.data.children && _vm.data.children.length ? _c('i', {
-      staticClass: "fez-icon fez-icon-ios-arrow-right"
+      staticClass: "fez-icon fez-icon-arrow-right-b"
     }) : _vm._e()]);
   }, staticRenderFns: [] };
 
