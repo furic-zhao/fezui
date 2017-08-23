@@ -1,7 +1,7 @@
-/* ==================================
- * @ 2017 FEZUI 基于Vue的积木式组件库
+/* =======================================
+ * @ 2017 FEZUI 现代响应式的多终端UI交互组件库
  * https://github.com/furic-zhao/fezui
- * ================================== */
+ * ======================================= */
 
 import Affix from './components/affix';
 import Alert from './components/alert';

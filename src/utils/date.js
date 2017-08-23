@@ -1,3 +1,8 @@
+/* =======================================
+ * @ 2017 FEZUI 现代响应式的多终端UI交互组件库
+ * https://github.com/furic-zhao/fezui
+ * ======================================= */
+
 /*eslint-disable*/
 // 把 YYYY-MM-DD 改成了 yyyy-MM-dd
 (function (main) {

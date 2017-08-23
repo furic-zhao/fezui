@@ -1,3 +1,8 @@
+/* =======================================
+ * @ 2017 FEZUI 现代响应式的多终端UI交互组件库
+ * https://github.com/furic-zhao/fezui
+ * ======================================= */
+
 // Thanks to
 // https://github.com/andreypopp/react-textarea-autosize/
 // https://github.com/ElemeFE/element/blob/master/packages/input/src/calcTextareaHeight.js

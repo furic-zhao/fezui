@@ -1,3 +1,8 @@
+/* =======================================
+ * @ 2017 FEZUI 现代响应式的多终端UI交互组件库
+ * https://github.com/furic-zhao/fezui
+ * ======================================= */
+
 import path from 'path';
 import webpack from 'webpack';
 import merge from 'webpack-merge';
