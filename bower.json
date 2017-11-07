@@ -1,25 +1,36 @@
 {
-    "name": "fezui",
-    "version": "1.2.3",
-    "description": "fezui 是一套基于 Vue 的支持多终端的用户界面交互组件库，致力于积木式的快速构建项目，自动适配PC端、手机端、Ipad端以及微信端，或内嵌各种第三方Android、IOS的APP中使用，提升产品体验和开发效率、降低开发和维护成本。",
-    "keywords": [
-        "响应式",
-        "多终端",
-        "UI交互组件",
-        "mobile",
-        "responsive",
-        "front-end",
-        "framework",
-        "web"
-    ],
-    "homepage": "https://github.com/furic-zhao/fezui",
-    "license": "MIT",
-    "main": [
-        "dist/css/fezui.css",
-        "dist/js/fezui.js",
-        "dist/fonts/ionicons.eot",
-        "dist/fonts/ionicons.svg",
-        "dist/fonts/ionicons.ttf",
-        "dist/fonts/ionicons.woff"
-    ]
+  "name": "fezui",
+  "version": "1.2.3",
+  "description": "fezui 是一套基于 Vue 的支持多终端的用户界面交互组件库，致力于积木式的快速构建项目，自动适配PC端、手机端、Ipad端以及微信端，或内嵌各种第三方Android、IOS的APP中使用，提升产品体验和开发效率、降低开发和维护成本。",
+  "keywords": [
+    "响应式",
+    "多终端",
+    "UI交互组件",
+    "mobile",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://github.com/furic-zhao/fezui",
+  "license": "MIT",
+  "main": [
+    "dist/css/fezui.css",
+    "dist/js/fezui.js",
+    "dist/fonts/ionicons.eot",
+    "dist/fonts/ionicons.svg",
+    "dist/fonts/ionicons.ttf",
+    "dist/fonts/ionicons.woff"
+  ],
+  "authors": [
+    "furic <furic@qq.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
